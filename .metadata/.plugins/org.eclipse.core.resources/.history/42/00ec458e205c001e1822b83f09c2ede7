@@ -1,0 +1,9 @@
+package br.com.tictac;
+import javax.swing.JFrame;
+
+public class QuintaTela extends JFrame{
+
+	public QuintaTela() {
+		
+	}
+}

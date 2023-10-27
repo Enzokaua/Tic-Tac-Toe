@@ -1,0 +1,10 @@
+package br.com.tictac;
+import javax.swing.*;
+public class SextaTela extends JFrame{
+
+	//tela caso o jogador tenha perdido
+	public SextaTela() {
+		
+	}
+	
+}

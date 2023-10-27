@@ -1,0 +1,48 @@
+package br.com.tictac.computer;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class InteracaoComComputador extends JFrame{
+	public InteracaoComComputador() {
+		setTitle("1 vs Compuiter");
+        setSize(600, 200);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        this.setResizable(false);
+        JPanel telaUmJogador = new JPanel();
+        telaUmJogador.setLayout(null);
+        JLabel titulo = new JLabel("Escolha um símbolo: ");
+        titulo.setBounds(230, 30, 150, 15);
+        JButton x = new JButton("X");
+        JButton y = new JButton("Y");
+        x.setBounds(33, 75, 250, 50);
+        
+        x.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new InteracaoComComputador();
+            }
+        });
+        
+        y.setBounds(316, 75, 250, 50);
+        
+        y.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new InteracaoComComputador();
+            }
+        });
+        
+        telaUmJogador.add(y);
+        telaUmJogador.add(titulo);
+        add(telaUmJogador);
+        setVisible(true);
+	}
+	
+}

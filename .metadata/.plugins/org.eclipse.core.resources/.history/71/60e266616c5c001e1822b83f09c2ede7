@@ -1,0 +1,67 @@
+package br.com.tictac;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+public class QuartaTela extends JFrame{
+	public QuartaTela() {
+		setTitle("Jogo multiplayer");
+        setSize(1500, 700);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        this.setResizable(false);
+        JPanel telaUmJogador = new JPanel();
+        telaUmJogador.setLayout(null);
+        JLabel tituloJogador1 = new JLabel("Jogador1 que joga!");
+        JLabel tituloJogador2 = new JLabel("Jogador2 que joga!");
+        tituloJogador1.setBounds(230, 30, 150, 15);
+        tituloJogador2.setBounds(230, 30, 150, 15);
+        JButton UXU = new JButton(" ");
+        JButton UXD = new JButton(" ");
+        JButton UXT = new JButton(" ");
+        JButton DXU = new JButton(" ");
+        JButton DXD = new JButton(" ");
+        JButton DXT = new JButton(" ");
+        JButton TXU = new JButton(" ");
+        JButton TXD = new JButton(" ");
+        JButton TXT = new JButton(" ");
+        UXU.setBounds(33, 75, 250, 50);
+        UXD.setBounds(53, 75, 250, 50);
+        UXT.setBounds(73, 75, 250, 50);
+        DXU.setBounds(93, 75, 250, 50);
+        DXD.setBounds(113, 75, 250, 50);
+        DXT.setBounds(133, 75, 250, 50);
+        TXU.setBounds(153, 75, 250, 50);
+        TXD.setBounds(173, 75, 250, 50);
+        TXT.setBounds(193, 75, 250, 50);
+        
+        UXU.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showInternalMessageDialog(TXT, "asdasdas");
+            }
+        });
+        
+        
+        UXD.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                
+            }
+        });
+        
+        telaUmJogador.add(y);
+        telaUmJogador.add(x);
+        telaUmJogador.add(titulo);
+        add(telaUmJogador);
+        setVisible(true);
+	
+	
+	}
+	
+}

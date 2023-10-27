@@ -1,0 +1,201 @@
+package br.com.tictac;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+public class QuartaTela extends JFrame{
+	public QuartaTela() {
+		setTitle("Jogo multiplayer");
+        setSize(1300, 1000);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        this.setResizable(false);
+        JPanel telaDeGame = new JPanel();
+        telaDeGame.setLayout(null);
+        //JLabel tituloJogador1 = new JLabel("Jogador1 que joga!");
+        //JLabel tituloJogador2 = new JLabel("Jogador2 que joga!");
+        //tituloJogador1.setBounds(230, 30, 150, 15);
+        //tituloJogador2.setBounds(230, 30, 150, 15);
+        JButton UXU = new JButton(" ");
+        JButton UXD = new JButton(" ");
+        JButton UXT = new JButton(" ");
+        JButton DXU = new JButton(" ");
+        JButton DXD = new JButton(" ");
+        JButton DXT = new JButton(" ");
+        JButton TXU = new JButton(" ");
+        JButton TXD = new JButton(" ");
+        JButton TXT = new JButton(" ");
+        UXU.setBounds(50, 20, 250, 50);
+        UXD.setBounds(50, 90, 250, 50);
+        UXT.setBounds(50, 160, 250, 50);
+        DXU.setBounds(500, 20, 250, 50);
+        DXD.setBounds(500, 90, 250, 50);
+        DXT.setBounds(500, 160, 250, 50);
+        TXU.setBounds(850, 20, 250, 50);
+        TXD.setBounds(850, 90, 250, 50);
+        TXT.setBounds(850, 160, 250, 50);
+        
+        TerceiraTela tres = new TerceiraTela();
+        
+        switch(tres.getContador()) {
+        
+        case 1: 
+        
+        	UXU.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    UXU.setText("X");
+                }});
+                
+
+        	UXD.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    UXD.setText("X");     
+                }});
+        	
+
+        	UXT.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    UXT.setText("X");
+                }});
+        	
+
+        	DXU.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    DXU.setText("X");
+                }});
+        	
+
+        	DXD.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    DXD.setText("X");  
+                }});
+        	
+
+        	DXT.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    DXT.setText("X"); 
+                }});
+        	
+
+        	TXU.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    TXU.setText("X");
+
+                }});
+        	
+
+        	TXD.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    TXD.setText("X");
+                }});
+        	
+
+        	TXT.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    TXT.setText("X");
+  
+                }});
+        	
+                break;
+                 
+                case 2: 
+                	UXU.addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            UXU.setText("O");
+                        }});
+                        
+
+                	UXD.addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            UXD.setText("O");     
+                        }});
+                	
+
+                	UXT.addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            UXT.setText("O");
+                        }});
+                	
+
+                	DXU.addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            DXU.setText("O");
+                        }});
+                	
+
+                	DXD.addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            DXD.setText("O");  
+                        }});
+                	
+
+                	DXT.addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            DXT.setText("O"); 
+                        }});
+                	
+
+                	TXU.addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            TXU.setText("O");
+
+                        }});
+                	
+
+                	TXD.addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            TXD.setText("O");
+                        }});
+                	
+
+                	TXT.addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            TXT.setText("O");
+          
+                        }});
+                	
+                        break;
+        }
+        
+        
+        telaDeGame.add(UXU);
+        telaDeGame.add(UXD);
+        telaDeGame.add(UXT);
+        telaDeGame.add(DXU);
+        telaDeGame.add(DXD);
+        telaDeGame.add(DXT);
+        telaDeGame.add(TXU);
+        telaDeGame.add(TXD);
+        telaDeGame.add(TXT);
+        //telaDeGame.add(tituloJogador1);
+        //telaDeGame.add(tituloJogador2);
+        add(telaDeGame);
+        setVisible(true);
+	
+	
+	}
+	
+}

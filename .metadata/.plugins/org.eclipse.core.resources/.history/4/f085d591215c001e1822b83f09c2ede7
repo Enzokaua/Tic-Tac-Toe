@@ -1,0 +1,10 @@
+package br.com.tictac;
+import javax.swing.JFrame;
+
+public class QuintaTela extends JFrame{
+
+	//tela caso o jogador tenha ganhado
+	public QuintaTela() {
+		
+	}
+}

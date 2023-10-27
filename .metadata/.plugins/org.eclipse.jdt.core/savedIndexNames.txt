@@ -1,0 +1,4 @@
+INDEX VERSION 1.132+C:\Users\Enzo PC\Documents\Estudos Pessoais\Workspace_TicTacToe\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2736745236.index
+3157541863.index

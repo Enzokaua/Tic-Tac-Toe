@@ -1,0 +1,24 @@
+package br.com.tictac.computer;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class InteracaoComComputador extends JFrame{
+	public void TelaComComputador() {
+		setTitle("1 vs Compuiter");
+        setSize(1200, 600);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        this.setResizable(false);
+        JPanel telaInicial = new JPanel();
+        telaInicial.setLayout(null);
+        JLabel titulo = new JLabel("Escolha uma modalidade: ");
+        titulo.setBounds(230, 30, 150, 15);
+        JButton multiPlayer = new JButton("2 Jogadores");
+        JButton computGame = new JButton("Computador");
+        multiPlayer.setBounds(33, 75, 250, 50);
+	}
+	
+}

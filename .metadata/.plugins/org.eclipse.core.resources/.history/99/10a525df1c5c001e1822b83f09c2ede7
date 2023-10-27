@@ -1,0 +1,8 @@
+package br.com.tictac.computer;
+
+public class InteracaoComComputador {
+	public void TelaComComputador() {
+		
+	}
+	
+}

@@ -1,0 +1,32 @@
+package br.com.tictac;
+
+import java.awt.FlowLayout;
+
+import javax.swing.*;
+import javax.swing.JFrame;
+
+public class TelaInicial extends JFrame {
+	
+	public TelaInicial() {
+        setTitle("Tic Tac Toe");
+        setSize(600, 200);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        this.setResizable(false);
+        JPanel telaInicial = new JPanel();
+        telaInicial.setLayout(null);
+        JButton multiPlayer = new JButton("2 Jogadores");
+        JButton computGame = new JButton("Computador");
+        multiPlayer.setBounds(33, 200, 250, 50);
+
+        computGame.setBounds(316, 200, 250, 50);
+        
+        telaInicial.add(multiPlayer);
+        telaInicial.add(computGame);
+        add(telaInicial);
+        setVisible(true);
+   
+
+
+          }
+}

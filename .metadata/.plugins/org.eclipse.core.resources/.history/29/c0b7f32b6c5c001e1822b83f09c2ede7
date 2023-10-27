@@ -1,0 +1,11 @@
+package br.com.tictac;
+import javax.swing.JFrame;
+
+public class QuartaTela extends JFrame{
+
+	//tela que mostrará o quadro do jogo, para ser interagida com o usuário
+	public QuartaTela() {
+		
+	}
+	
+}
